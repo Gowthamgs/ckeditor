@@ -1,0 +1,29 @@
+<body>
+  <div class="jumbotron">
+    <div class="row">
+      <div class="container">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+<form>
+              <textarea name="editor" id="editor">
+                <%=  simple_format(@text).gsub('<br />', '<p>') %>
+              </textarea>
+              <script>
+                CKEDITOR.replace( 'editor', {
+                  
+                } );
+                CKEDITOR.config.height = '520px';
+                CKEDITOR.config.width = '100%';
+              </script>
+          </form>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"  style="background-color: #30302d;">
+      <div class="container">
+
+      </div>
+    </div>
+</body>
